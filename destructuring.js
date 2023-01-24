@@ -79,3 +79,7 @@ console.log(b);
 console.log(a);
 console.log(b);
 
+// This wont work;
+[a, b] = obj;
+console.log(a);
+console.log(b);
