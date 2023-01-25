@@ -80,6 +80,37 @@ console.log(a);
 console.log(b);
 
 // This wont work;
-[a, b] = obj;
-console.log(a);
-console.log(b);
+// [a, b] = obj;
+// console.log(a);
+// console.log(b);
+
+// Adding elements into an array using destructuring
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [6, 7, 8, 9];
+
+let arr3 = [arr1, arr2];
+let arr4 = [...arr1, arr2];
+let arr5 = [...arr1, ...arr2];
+
+console.log("arr3: ", arr3);
+console.log("arr4: ", arr4);
+console.log("arr5: ", arr5);
+
+// Adding properties in an object using destructuring.
+
+let object1 = {
+    name: "Chirag",
+    age: 21,
+}
+
+let object2 = {
+    name: "Brijesh",
+    age: 21,
+}
+
+// adding properties with destructuring
+object1 = { ...object1, points: 12 };
+object2 = { ...object2, points: 23 };
+
+//adding properties using regular
+
